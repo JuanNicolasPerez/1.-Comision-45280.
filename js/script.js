@@ -78,7 +78,6 @@ fetch("./js/product.json")
             })
         });
 
-
         function pintarCarrito() {
             modalcontainer.innerHTML = "";
             modalcontainer.style.display = "flex";
@@ -168,34 +167,31 @@ fetch("./js/product.json")
 
         function eliminarproducto(id) {
             const foundId = carrito.find((element) => element.id === id)
-
             carrito = carrito.filter((carritoId) => {
                 return carritoId !== foundId;
             });
-
             savelocal();
             pintarCarrito();
         }
 
         function vaciarCarrito() {
-            carrito.length = 0;
-            localStorage.setItem("productos-en-carrito", JSON.stringify(carrito));
-
-            Swal.fire({
-                title: 'Está seguro de eliminar los producto del Carrito?',
-                icon: 'warning',
-                showCancelButton: true,
-                confirmButtonText: 'Sí, seguro',
-                cancelButtonText: 'No, no quiero'
-            }).then((result) => {
-                if (result.isConfirmed) {
-                    Swal.fire({
-                        title: 'Borrado!',
-                        icon: 'success',
-                        text: 'Tus Productos del Carrito han sido borrados'
-                    })
-                }
-            })
+            if (carrito.length == 0) {
+                Swal.fire({
+                    title: 'Error!',
+                    text: 'Tu Carrito ya esta Vacio',
+                    icon: 'error',
+                    confirmButtonText: ' =( '
+                })
+            }
+            else {
+                carrito.length = 0;
+                localStorage.setItem("productos-en-carrito", JSON.stringify(carrito));
+                Swal.fire({
+                    title: 'Borrado!',
+                    icon: 'success',
+                    text: 'Tus Productos del Carrito han sido borrados'
+                })
+            }
             savelocal();
             pintarCarrito();
         }
@@ -221,5 +217,5 @@ fetch("./js/product.json")
             pintarCarrito();
             savelocal();
         }
-    })
+})
 
