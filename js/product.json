@@ -1,0 +1,101 @@
+[
+    {
+        "id": 1,
+        "nombre": "Revendedores",
+        "precio": 27890,
+        "categoria": {
+            "nombre": "Kit Revendedores",
+            "id": "kit revendedores"
+        },
+        "img": "./img/img-produc/1.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 2,
+        "nombre": "Marcadores.",
+        "precio": 3800,
+        "categoria": {
+            "nombre": "Marcadores",
+            "id": "marcadores"
+        },
+        "img": "./img/img-produc/2.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 3,
+        "nombre": "Revendedores.",
+        "precio": 18000,
+        "categoria": {
+            "nombre": "kit Revendedores",
+            "id": "kit revendedores"
+        },
+        "img": "./img/img-produc/3.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 4,
+        "nombre": "Revendedores",
+        "precio": 18990,
+        "categoria": {
+            "nombre": "kit Revendedores",
+            "id": "kit revendedores"
+        },
+        "img": "./img/img-produc/4.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 5,
+        "nombre": "Marcadores",
+        "precio": 26890,
+        "categoria": {
+            "nombre": "Marcadores",
+            "id": "marcadores"
+        },
+        "img": "./img/img-produc/5.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 6,
+        "nombre": "Marcadores",
+        "precio": 6990,
+        "categoria": {
+            "nombre": "Marcadores",
+            "id": "marcadores"
+        },
+        "img": "./img/img-produc/6.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 7,
+        "nombre": "Lapices de colores",
+        "precio": 4790,
+        "categoria": {
+            "nombre": "Lapices",
+            "id": "lapices"
+        },
+        "img": "./img/img-produc/7.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 8,
+        "nombre": "Lapices de colores",
+        "precio": 11390,
+        "categoria": {
+            "nombre": "Lapices de colores",
+            "id": "lapices"
+        },
+        "img":"./img/img-produc/8.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 9,
+        "nombre": "Marcadores",
+        "precio": 8790,
+        "categoria": {
+            "nombre": "Marcadores",
+            "id": "marcadores"
+        },
+        "img": "./img/img-produc/9.jpg",
+        "cantidad": 1
+    }
+]

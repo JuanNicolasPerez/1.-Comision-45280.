@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/favicon/favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title> Librería y Mercería - Yunino | Inicio </title>
+</head>
+
+<body>
+    <!-- NavBar -->
+    <div class="nav-container">
+        <nav class="navbar">
+            <h1 class="navbar-logo">Yunino</h1>
+            <h1 class="ver-carrito" id="vercarrito"> 🛒 </h1>
+        </nav>
+    </div>
+
+    <!-- Categoria -->
+    <div>
+        <ul class="menu">
+            <li>
+                <button id="todos" class="boton-menu boton-categoria active"><i class="bi bi-hand-index-thumb-fill"></i>
+                    Todos los productos</button>
+            </li>
+            <li>
+                <button id="lapices" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>
+                    Lapices</button>
+            </li>
+            <li>
+                <button id="marcadores" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>
+                    Marcadores</button>
+            </li>
+            <li>
+                <button id="kit revendedores" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>
+                    Kit Revendedores</button>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Content card -->
+    <div id="contenedor-produc" class="contentProdc"></div>
+
+    <!-- Modal carrito-->
+    <div id="modal-content" class="content-modal"></div>
+
+    <!-- Pie de Pagina -->
+    <footer>
+        <div class="footer-content">
+            <h3>Flia Yunino</h3>
+            <p> Ofrecemos una amplia variedad de artículos y marcas, todo lo que busque relacionado en los articulos librería.
+                Estamos ubicados en la ciudad de Posadas, Localidad Garupa, provincia de Misiones, también contamos opciones
+                para realizar entregas a todo el pais.!</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p> &copy;2022 Yunino. Todos los Derechos Reservados <span>Yunino</span></p>
+        </div>
+    </footer>
+    
+    <!-- JS -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
